@@ -21,18 +21,20 @@
 		<!-- php echo to print the html to the page -->
     <?php 
 			echo "<h1>Volume of a Sphere</h1>";
-			echo "<h3>This program will calculate the volume of a Sphere</h3>";
+			echo "<h3>This program will calculate the volume of a Sphere.</h3>";
 		?>
 		<!-- form to get the bases and height from the user -->
     <form action="./results.php" method="post" target="results">
       <label for="radius">Radius (cm):</label>
-      <input type="float" id="radius" placeholder="Enter value" name="radius"><br><br>
+      <input type="float" id="radius" placeholder="Enter value..." name="radius"><br><br>
       <input type="submit" value="Calculate Volume">
     </form>
 
 			<!-- iframe for the results to show on the web page. -->
 			<iframe id="results" name="results">
-        The volume of the sphere is <?php echo="$volume" ?><sup>3</sup>.
+        <div id="user-info">
+        <div id="$volume"></div>
+        </div>
       </iframe>
 	</body>
 </html>
